@@ -1,5 +1,6 @@
 :root {
   --main: #fff159;
+  --card-text: #3dbb7a
 }
 
 body, html{
@@ -7,6 +8,9 @@ body, html{
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+/*---------------- NAV------------- */
+
 
 nav{
   background-color: var(--main);
@@ -61,3 +65,32 @@ input{
     border: 1px solid rgb(212, 212, 212)
 }
 
+
+/*---------------- CARD------------- */
+
+.section-cards{
+  padding: 2rem;  
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(
+      200px,
+      auto-fit
+    )
+  );
+  gap: 2rem;
+}
+
+.card{
+  border: 1px solid rgb(212, 212, 212);
+  height: 400px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: hidden;
+  }
+
+.card > img {
+  max-height: 250px;
+}
