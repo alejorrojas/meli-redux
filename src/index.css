@@ -5,11 +5,12 @@
 body, html{
   margin: 0;
   padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav{
   background-color: var(--main);
-  height: 10vh;
+  height: 5vh;
   padding: 2.5rem;
   display: flex;
   justify-content: space-between;
@@ -30,3 +31,33 @@ nav > img{
   width: 2rem;
   height: 2rem;
 }
+
+.input-box{
+  width: 60%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.input-box > button {
+  background-color: #fff;
+  border: none;
+  height: 100%;
+  width: 4rem;
+  min-height: 3rem;
+  border: 1px solid rgb(212, 212, 212)
+
+}
+
+button > img {
+  cursor: pointer;
+  width: 15px;
+}
+
+input{
+    padding: 1.45rem;
+    width: 90%;
+    outline: none;
+    border: 1px solid rgb(212, 212, 212)
+}
+
