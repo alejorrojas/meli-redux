@@ -1,0 +1,32 @@
+:root {
+  --main: #fff159;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: var(--main);
+  height: 10vh;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav > img{
+  width: 10rem;
+  height: 3rem;
+}
+
+.options-box{
+  display: flex;
+  gap: 2rem
+}
+
+.options-box > img{
+  width: 2rem;
+  height: 2rem;
+}
