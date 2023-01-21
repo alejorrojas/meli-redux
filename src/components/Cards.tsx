@@ -8,8 +8,11 @@ const Cards = () => {
   if(isLoading) return <div>Loading....</div>
 
   return (
-    <section className='section-cards'>
-        {data?.map(product => <Card product={product} />)}
+    <section>
+      <h2>Basado en tu última visita</h2> 
+      <div className='section-cards'>
+          {data?.map(product => <Card product={product} />)}
+      </div>
     </section>
   )
 }
