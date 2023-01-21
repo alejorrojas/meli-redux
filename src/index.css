@@ -49,6 +49,7 @@ nav > img{
 }
 
 .options-box{
+  padding: 0.5rem;
   display: flex;
   gap: 2rem
 }
