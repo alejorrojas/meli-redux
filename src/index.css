@@ -57,6 +57,7 @@ nav > img{
 .options-box > img{
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 }
 
 .input-box{
@@ -157,3 +158,21 @@ span{
   color: var(--card-text);
 }
 
+/* ----------LOADING---------------- */
+
+#loading-spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 50px auto;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

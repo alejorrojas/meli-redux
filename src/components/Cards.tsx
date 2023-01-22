@@ -1,11 +1,12 @@
 import { useQuery } from 'react-query'
 import { getProducts } from '../services/products.service'
 import Card from './Card'
+import Loading from './Loading'
 
 const Cards = () => {
   const {isLoading, data} = useQuery("products",   ()=>getProducts())
  
-  if(isLoading) return <div>Loading....</div>
+  if(isLoading) return <Loading/>
 
   return (
     <section>
