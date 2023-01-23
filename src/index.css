@@ -182,7 +182,7 @@ span{
   color: var(--card-text);
 }
 
-.btn-add{
+.btn-base, .btn-add{
   background-color: transparent;
   border: none;
   color: royalblue;
@@ -193,9 +193,15 @@ span{
   cursor: pointer;
 }
 
-.btn-add:hover{
+.btn-base:hover{
   font-size: 26px;
 }
+
+.btn-add{
+  color: var(--main);
+}
+
+
 
 /* ----------LOADING---------------- */
 
@@ -247,6 +253,11 @@ span{
   
 }
 
-.carrito > hr {
-  margin: 0;
+
+.items-list{
+  display: flex;
+ flex-direction: column;
+ text-align: left;
+ gap: 1rem;
 }
+

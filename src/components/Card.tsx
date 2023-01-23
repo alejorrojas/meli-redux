@@ -1,9 +1,22 @@
 import { ICard } from "../types"
+import { useAppDispatch } from "../redux/hooks"
+import { addProduct } from "../redux/productSlice"
+import { useState } from "react"
 
 const Card = ({product}: ICard) => {
+  const [isAdd, setAdd] = useState(false)
+  const dispatch = useAppDispatch()
+
+  //Styling is optional
+  const handleClick = ()=>{
+    dispatch(addProduct(product))
+    setAdd(true)
+  }
+  
+
   return (
     <div className='card'>
-        <button className="btn-add" onClick={()=>alert("Product added")} >+</button>
+        <button className={isAdd ? "btn-add" : "btn-base"} onClick={handleClick}>+</button>
         <div className="img-card">
           <img src={product.image} alt="product-img" />
         </div>
