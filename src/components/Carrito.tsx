@@ -1,7 +1,7 @@
 import { useAppSelector } from "../redux/hooks"
 
 const Carrito = () => {  
-  const items = useAppSelector(state => state.products)
+  const items = useAppSelector(state => state.products.product)
 
   return (
     <div className="carrito">

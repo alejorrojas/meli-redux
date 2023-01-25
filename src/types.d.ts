@@ -7,3 +7,15 @@ export interface Product {
 export interface ICard {
     product: Product
 }
+
+export interface IUser{
+    username: string,
+    password: string
+}
+
+export interface IState {
+    success: boolean,
+    error: boolean,
+    product: Product[],
+    loading: boolean
+}
