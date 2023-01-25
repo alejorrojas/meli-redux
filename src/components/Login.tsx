@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from "react"
-import { useLocation } from "wouter"
+import { Link, useLocation } from "wouter"
 import logoMeli from "../assets/logo.png"
 import { useAppDispatch, useAppSelector } from "../redux/hooks"
 import { loginUser } from "../redux/productSlice"
@@ -35,7 +35,9 @@ const Login = () => {
   return (
     <>
       <nav>
-        <img src={logoMeli} />
+        <Link href="/">
+          <img src={logoMeli} />
+        </Link>
       </nav>
 
       <div className="login">
