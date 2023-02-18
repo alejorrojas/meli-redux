@@ -13,4 +13,4 @@ Busca mostrar la intergración de Redux Toolkit y React Query en un proyecto de 
 - Mock de un login con autenticacion mediante el middleware Thunk propio de Redux Toolkit
 
 ## Deploy 🥽
-Link al [deploy]() 
+Link al [deploy](https://meli-redux.vercel.app/) 
